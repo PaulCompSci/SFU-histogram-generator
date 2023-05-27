@@ -72,7 +72,6 @@ header h1{
  }
  
  
- 
  #histogram .histogramLabel label{
      width : 150px ;
      display: inline-block   ;
@@ -107,7 +106,7 @@ header h1{
     background-color: rgba(0, 0, 0, 0.4);
   }
 
-  .modal-content {
+  .modal-content {  
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;

@@ -41,13 +41,13 @@ var grades  = [65.95, 56.98, 78.62, 96.1, 90.3, 72.24, 92.34, 60.00, 81.43, 86.2
                 }
                 },
             
-            aspectRatio: 1, // Adjust the value to change the aspect ratio
+            aspectRatio: 1, 
             scales: {
                 y: {
                 beginAtZero: true,
                 ticks: {
-                    precision: 0, // Display only whole number values
-                    stepSize: 1 // Define the interval between ticks (optional)
+                    precision: 0, 
+                    stepSize: 1
                 }
                 }
             }
@@ -84,7 +84,7 @@ for (var i = 0; i < valueBounds.length-1; i++) {
     
         lowerBound = [] ; 
 
-        //check for emty spaces 
+
         for(var i = 0 ; i < valueBounds.length-1 ;i ++){
             if (valueBounds[i].value == ''){
                 
@@ -94,7 +94,7 @@ for (var i = 0; i < valueBounds.length-1; i++) {
             }
         }
 
-        //check if all the input are valid  (check is there any things other than number ? ) 
+
         for(var i = 0 ; i <valueBounds.length-1; i++) { 
             if (!(isFloat(valueBounds[i].value))){
                 showModal("only number are allow ");
@@ -108,12 +108,12 @@ for (var i = 0; i < valueBounds.length-1; i++) {
         }
 
 
-        //check fo overlap 
+
         for(var i = 1 ; i < lowerBound.length-1 ; i++) {
             if(lowerBound[i]  < lowerBound[i+1]){
                
                 showModal("please enter a valid score range") ;
-                event.target.focus(); // Keep focus on the input box
+                event.target.focus(); 
                 lowerBound = [] ;
                 return  ;
             }
