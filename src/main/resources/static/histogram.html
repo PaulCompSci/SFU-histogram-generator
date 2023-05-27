@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="histogram.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Histogram Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Histogram Generator</h1>
+    </header>
+    <section class = "container">   
+        <section id = "lowerBounds" >
+            <h1> Lower Bounds </h1> 
+            <div class = "lowerBoundsInput">
+                <label for="max">Max</label>
+                <input type="text" id="max" name="maxGradeScore" value = "100.00">
+                <br>
+                <br> 
+                <label for="aPlusGrade">A+</label>
+                <input type="text" id="aPlusGrade" name="aPlusGradeScore" value = "95.00">
+                <br>
+                <br>
+                <label for="aGrade">A</label>
+                <input type="text" id="aGrade" name="aGradeScore" value = "90.00">
+                <br>
+                <br>
+                <label for="aMinusGrade">A-</label>
+                <input type="text" id="aMinusGrade" name="aMinusGradeScore" value = "85.00">
+                <br>
+                <br> 
+                <label for="bPlusGrade">B+</label>
+                <input type="text" id="bPlusGrade" name="bPlusGradeScore" value = "80.00"> 
+                <br>
+                <br>
+                <label for="bGrade">B</label>
+                <input type="text" id="bGrade" name="bGradeScore" value = "75.00">
+                <br>
+                <br>
+                <label for="bMinusGrade">B-</label>
+                <input type="text" id="bMinusGrade" name="bMinusGradeScore" value = "70.00">
+                <br>
+                <br> 
+                <label for="cPlusGrade">C+</label>
+                <input type="text" id="cPlusGrade" name="cPlusGradeScore" value = "65.00">
+                <br>
+                <br>
+                <label for="cGrade">C</label>
+                <input type="text" id="cGrade" name="cGradeScore" value = "60.00">
+                <br>
+                <br>
+                <label for="cMinusGrade">C-</label>
+                <input type="text" id="cMinusGrade" name="cMinusGradeScore" value = "55.00">
+                <br>
+                <br>
+                <label for="dGrade">D</label>
+                <input type="text" id="dGrade" name="dGradeScore" value = "50.00">
+                <br>
+                <br>
+                <label for="fGrade">F</label>
+                <input type="text" id="fGrade" name="fGradeScore" value = "0.00">
+            </div>
+        </section>
+
+
+        <section id = "histogram">
+            <h1>Histogram</h1>
+            <canvas id = "gradeDistribution"></canvas>
+        </section>
+
+        <section id = "newGradeInput">
+            <div class = "newGradeInputForm"> 
+                <label for="newGrade">New Grade:</labe>
+                <input type="text" id="newGrade" name="newGrade">
+                <button id = "addGradeButton">Add Grade</button>
+            </div>
+        </section>
+    </section>
+    <div id="modal" class="modal">
+    <div class="modal-content">
+      <p id="modalMessage"></p>
+      <button id="modalButton">OK</button>
+    </div>
+  </div>
+
+    <script src = calculate.js></script>
+</body>
+</html>
+
+
