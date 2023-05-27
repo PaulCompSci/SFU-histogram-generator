@@ -55,7 +55,7 @@ var grades  = [65.95, 56.98, 78.62, 96.1, 90.3, 72.24, 92.34, 60.00, 81.43, 86.2
     };
     
     
-    var cookieChart = new Chart(canvasElement , config) ; 
+    var gradeChart = new Chart(canvasElement , config) ; 
 
 
 
@@ -174,8 +174,8 @@ for (var i = 0; i < valueBounds.length-1; i++) {
             }
         }
 
-        cookieChart.data.datasets[0].data = [aPlus, a, aMinus, bPlus, b, bMinus , cPlus, c , cMinus, d , f];
-        cookieChart.update() ; 
+        gradeChart.data.datasets[0].data = [aPlus, a, aMinus, bPlus, b, bMinus , cPlus, c , cMinus, d , f];
+        gradeChart.update() ; 
     
  
   });   
@@ -270,8 +270,8 @@ document.getElementById("addGradeButton").addEventListener("click", function() {
             value.value = "" ;
         }
 
-        cookieChart.data.datasets[0].data = [aPlus, a, aMinus, bPlus, b, bMinus , cPlus, c , cMinus, d , f];
-        cookieChart.update() ; 
+        gradeChart.data.datasets[0].data = [aPlus, a, aMinus, bPlus, b, bMinus , cPlus, c , cMinus, d , f];
+        gradeChart.update() ; 
 
        
   });
