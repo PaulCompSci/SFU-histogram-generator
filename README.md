@@ -6,4 +6,4 @@ programming language used:
 3) Javascript 
 
 library used to generate chart :
-1) chartm.js
+1) chart.js
